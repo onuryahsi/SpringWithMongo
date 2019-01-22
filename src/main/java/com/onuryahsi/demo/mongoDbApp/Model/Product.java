@@ -7,14 +7,13 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @Document(collection = "product")
 public class Product {
 	
-	//@GeneratedValue(strategy = GenerationType.AUTO)
 	@Id
 	private ObjectId _id;
 	private String productBrand;
 	private String productModel;
-	private int productWeight;
-	private int productPurchasePrice;
-	private int productSalePrice;
+	private Integer productWeight;
+	private Integer productPurchasePrice;
+	private Integer productSalePrice;
 	
 	public Product(String productBrand, String productModel, Integer productWeight, Integer productPurchasePrice,
 			Integer productSalePrice) {
@@ -26,16 +25,16 @@ public class Product {
 	}
 
 	/**
-	 * @return the productID
+	 * @return the _id
 	 */
-	public String getProductID() {
+	public String get_id() {
 		return _id.toHexString();
 	}
 
 	/**
-	 * @param productID the productID to set
+	 * @param _id the _id to set
 	 */
-	public void setProductID(ObjectId _id) {
+	public void set_id(ObjectId _id) {
 		this._id = _id;
 	}
 
@@ -84,28 +83,29 @@ public class Product {
 	/**
 	 * @return the productPurchasePrice
 	 */
-	public int getProductPurchasePrice() {
+	public Integer getProductPurchasePrice() {
 		return productPurchasePrice;
 	}
 
 	/**
 	 * @param productPurchasePrice the productPurchasePrice to set
 	 */
-	public void setProductPurchasePrice(int productPurchasePrice) {
+	public void setProductPurchasePrice(Integer productPurchasePrice) {
 		this.productPurchasePrice = productPurchasePrice;
 	}
 
 	/**
 	 * @return the productSalePrice
 	 */
-	public int getProductSalePrice() {
+	public Integer getProductSalePrice() {
 		return productSalePrice;
 	}
 
 	/**
 	 * @param productSalePrice the productSalePrice to set
 	 */
-	public void setProductSalePrice(int productSalePrice) {
+	public void setProductSalePrice(Integer productSalePrice) {
 		this.productSalePrice = productSalePrice;
 	}
+
 }

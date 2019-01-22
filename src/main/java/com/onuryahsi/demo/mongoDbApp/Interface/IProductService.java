@@ -1,4 +1,4 @@
-package com.onuryahsi.demo.mongoDbApp.Inteface;
+package com.onuryahsi.demo.mongoDbApp.Interface;
 
 import org.bson.types.ObjectId;
 

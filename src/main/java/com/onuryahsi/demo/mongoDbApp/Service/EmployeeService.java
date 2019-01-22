@@ -4,7 +4,7 @@ import org.bson.types.ObjectId;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.onuryahsi.demo.mongoDbApp.Inteface.IEmployeeService;
+import com.onuryahsi.demo.mongoDbApp.Interface.IEmployeeService;
 import com.onuryahsi.demo.mongoDbApp.Model.Employee;
 import com.onuryahsi.demo.mongoDbApp.Repository.EmployeeRepository;
 
